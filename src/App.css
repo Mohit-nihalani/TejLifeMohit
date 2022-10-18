@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Angkor&display=swap');
+@import './css/HeroSection.css';
+
+body
+{
+    background-color: #1b1d1d !important;
+    color: white !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bg-color
+{
+    background-color: #1b1d1d;
+    font-family: 'Angkor', cursive;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.section-main-title
+{
+    font-family: 'Angkor', cursive;
+    font-size: 6rem;
+    line-height: 1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.sub-text
+{
+    margin-top: 10% !important;
+    font-size: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.customText{
+    font-family: 'Angkor', cursive;
+    font-size: 5rem !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home-value_heading
+{
+    margin-bottom: 2rem;
+    font-size: 1.875rem;
+    font-weight: 400;
+}
+
+.service_text
+{
+    min-height: 5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #e7ecf2;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    letter-spacing: .5px;
+}
+
+.arrow-icon:hover{
+    margin-left: 10px;
+}
+
+.customLinkCss{
+    font-size: 18px;
+    color: #c8c0b0;
+    text-decoration: none;
+}
+
+.customLinkCss:hover{
+    color: #e7ecf2;
+}
+.customHrCss
+{
+    width: 35px;
+}
+
+li.list-item{
+    color:#7B8291;
+    font-size: 20px;
+    margin: 0px 0px 8px;
+}
+
+.recentWorkTitle{
+    font-size: 6rem;
+    font-weight: 700;
+    letter-spacing: -3.5px;
+    color: #c8c0b0;
+    line-height: 0.7;
+}
+
+.work_client-tag{
+    margin-bottom: 1rem;
+    font-size: 20px;
+    color: #f2f6f9;
+}
+
+.heading-medium{
+    font-size: 2.5rem;
+    line-height: 1.1;
+    font-weight: 400;
 }
