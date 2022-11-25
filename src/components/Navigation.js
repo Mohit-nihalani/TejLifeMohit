@@ -1,33 +1,36 @@
-import React from 'react';
-import {Container,Nav,Navbar,NavDropdown } from 'react-bootstrap';
-import '../App.css';
+import React, { useState } from "react";
+import Home from "./Home";
+import WorkPage from "./Pages/WorkPage";
+import Culture from "./Pages/Culture";
+import Contact from "./Pages/Contact";
+import Career from "./Pages/Career";
+import Terms from "./FooterPages/Terms";
+import Privacy from "./FooterPages/Privacy";
+import Transparency from "./FooterPages/Transparency";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { WorkPageSectionData, WorkPageCardData } from "../assests/AllData";
+import NavBar from "./NavBar";
 
-const Navigation = () => {
+const Navigation = () => { 
   return (
-      <>
-        <Navbar className="bg-color fixed-top" expand="lg">
-      <Container>
-        <Navbar.Brand className="text-light" href="#home">Big Spaceship</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
-      </>
-  )
-}
+    <>
+    <BrowserRouter>
+      <NavBar/>
+      <Routes>
+        <Route path="/" element={<Home/>}></Route>
+        <Route path="/contact" element={<Contact/>}></Route>
+        <Route path="/workPage" element={<WorkPage/>}></Route>
+        <Route path="/culture" element={<Culture/>}></Route>
+        <Route path="/career" element={<Career/>}></Route>
+        <Route path="/terms" element={<Terms/>}></Route>
+        <Route path="/transparency" element={<Transparency/>}></Route>
+        <Route path="/privacy" element={<Privacy/>}></Route>
+       
+      </Routes>
+    
+    </BrowserRouter>
+    </>
+  );
+};
 
 export default Navigation;

@@ -1,47 +1,176 @@
-@import url('https://fonts.googleapis.com/css2?family=Angkor&display=swap');
-@import './css/HeroSection.css';
-
-body
-{
-    background-color: #1b1d1d !important;
-    color: white !important;
+body{
+    max-width: 100vw;
+    box-sizing: border-box;
 }
 
-.bg-color
-{
+.Home {
     background-color: #1b1d1d;
-    font-family: 'Angkor', cursive;
-
 }
 
-.section-main-title
-{
-    font-family: 'Angkor', cursive;
+.heroSection {
+    height: 100vh;
+    padding-top: 40vh;
+}
+
+.subHeroTitleText>h2 {
+    height: 100%;
+    width: 100%;
     font-size: 6rem;
-    line-height: 1;
+    font-weight: 700;
+    letter-spacing: -3.5px;
+    color: #c8c0b0;
+
 }
 
-.sub-text
-{
-    margin-top: 10% !important;
-    font-size: 20px;
+.subHeroSideText>p {
+    font-size: 1.5rem;
+    color: white;
 }
 
-.customText{
-    font-family: 'Angkor', cursive;
-    font-size: 5rem !important;
+.featureSection {
+    margin: 10% 0 5% 0;
 }
 
-.home-value_heading
-{
+.featureDiv>h3 {
     margin-bottom: 2rem;
     font-size: 1.875rem;
     font-weight: 400;
+    color: #c8c0b0;
 }
 
-.service_text
-{
-    min-height: 5rem;
+.featureDiv>p {
+    color: white;
+    margin: 0 0 16px;
+    font-size: 20px;
+}
+
+.featureDiv>hr {
+    color: white;
+    width: 8%;
+}
+
+.featureLink>a {
+    text-decoration: none;
+    color: #c8c0b0;
+    font-size: 18px;
+}
+
+.featureLink>a:hover {
+    color: white;
+}
+
+.featureList {
+    line-height: 1.5;
+}
+
+.featureListItem {
+    color: #7B8291;
+    margin-bottom: 0.5rem;
+    font-size: 20px;
+}
+
+a>.featureArrowIcon {
+    padding-left: 10px;
+}
+
+.recenWorksTitle>h2 {
+    font-size: 6rem;
+    font-weight: 700;
+    letter-spacing: -3.5px;
+    color: #c8c0b0;
+    width: 6rem;
+    line-height: 0.8;
+
+}
+
+.recentWorksContent>a {
+    color: white !important;
+}
+
+.recenWorksTitle>hr {
+    color: white;
+    margin: 25px 0px 60px 0px;
+}
+
+.recentWorksContent>p {
+    color: #f2f6f9;
+    font-size: 16px;
+}
+
+.navbarLogo{
+    width: 156px;
+}
+
+.recentWorksContent>h4 {
+    font-size: 2.5rem;
+    line-height: 1.1;
+    font-weight: 400;
+}
+
+.recentWorkHr {
+    margin: 10% 0;
+}
+
+.CardsContainer>a {
+    text-decoration: none;
+    color: #f2f6f9;
+}
+
+.CardsContainer>a:hover {
+    color: white;
+}
+
+.CardsImage {
+    margin-bottom: 32px;
+}
+
+.CardsSubTitle {
+    margin-bottom: 16px;
+}
+
+.CardBtn {
+    background-color: #C8C0B0;
+    border: none;
+    padding: 16px;
+}
+
+.inTheWorksSection>h2 {
+    font-size: 2.5rem;
+    line-height: 1.1;
+    font-weight: 400;
+    color: #e7ecf2;
+}
+
+.inTheWorkSectionContent {
+    font-size: 1.875rem;
+    color: #e7ecf2;
+}
+
+.inTheWorksSection>hr {
+    color: white;
+    margin-top: 25px;
+    margin-bottom: 10%;
+}
+
+.ContactUsLink>a {
+    color: #C8C0B0;
+    text-decoration: none;
+    margin-bottom: 32px;
+    font-size: 1.125rem;
+    letter-spacing: 1px;
+}
+
+.ContactUsLink>a:hover {
+    color: white
+}
+
+.revelHeadingText {
+    color: #f2f6f9;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.revelText {
     margin-top: 0;
     margin-bottom: 1rem;
     color: #e7ecf2;
@@ -50,46 +179,389 @@ body
     letter-spacing: .5px;
 }
 
-.arrow-icon:hover{
-    margin-left: 10px;
-}
-
-.customLinkCss{
-    font-size: 18px;
-    color: #c8c0b0;
+.revelSignUp {
+    color: #C8C0B0;
     text-decoration: none;
+    margin-bottom: 32px;
+    font-size: 1.125rem;
+    letter-spacing: 1px;
 }
 
-.customLinkCss:hover{
+.BsArrowRightCss {
+    padding-left: 10px;
+}
+
+.revelSignUp:hover {
+    color: white
+}
+
+.ContactSection {
+    margin-top: 10%;
+    padding-bottom: 10%;
+    color: #f2f6f9;
+
+}
+
+.contactSectionHeading {
+    width: 100%;
+    font-size: 19rem;
+    line-height: .9;
+    font-weight: 700;
+    letter-spacing: -1rem;
+    text-transform: lowercase;
+}
+
+.contactSectionText {
     color: #e7ecf2;
-}
-.customHrCss
-{
-    width: 35px;
-}
-
-li.list-item{
-    color:#7B8291;
-    font-size: 20px;
-    margin: 0px 0px 8px;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    letter-spacing: .5px;
 }
 
-.recentWorkTitle{
+.contactSectionBtn {
+    background-color: #C8C0B0;
+    border: none;
+    padding: 16px;
+}
+
+.WorkPage {
+    background-color: #1b1d1d;
+    padding-top: 20%;
+}
+
+.workPageHeading {
+    margin: 0;
     font-size: 6rem;
     font-weight: 700;
     letter-spacing: -3.5px;
-    color: #c8c0b0;
-    line-height: 0.7;
+    line-height: 1;
+    color: #7b8291;
 }
 
-.work_client-tag{
+
+.workPageParagraph {
+    margin-top: 0;
     margin-bottom: 1rem;
-    font-size: 20px;
-    color: #f2f6f9;
+    color: #e7ecf2;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    letter-spacing: .5px;
 }
 
-.heading-medium{
+
+.WorkPage>hr {
+    width: 90%;
+    margin: 0 auto 5% auto;
+    color: white;
+}
+
+.CulturePage {
+    padding-top: 20%;
+    background-color: #360b1e;
+}
+
+.CulturePageHeading {
+    font-size: 6rem;
+    font-weight: 700;
+    letter-spacing: -3.5px;
+    color: #de312b;
+}
+
+.CulturePageParagraph {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #e7ecf2;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    letter-spacing: .5px;
+
+}
+
+.CultureValues {
+    margin-top: 10%;
+}
+
+.CultureValueHeading {
+    color: #de312b;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: Biennale, sans-serif;
+    font-size: 4rem;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+
+.CultureValueText {
+    color: #f2f6f9;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: -2px;
+    margin-bottom: 4rem;
+    font-size: 4.3rem;
+}
+
+.ContactPage {
+    background-color: #200034;
+}
+
+
+.contactPageParagraph {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #e7ecf2;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    letter-spacing: .5px;
+}
+
+.contactPageEmailLink {
+    font-weight: 700;
+    color: #f2f6f9;
+    text-decoration: none;
+    font-size: 1.125rem;
+    letter-spacing: 1px;
+}
+
+
+.contactPageEmailLink:hover {
+    color: #0fc8c2;
+}
+
+.contactPageHr {
+    color: white;
+    margin: 15% 0px;
+}
+
+.emailInput {
+    min-height: 3.6rem !important;
+    margin-bottom: 0.75rem !important;
+    padding: 0.5rem 1rem !important;
+    border: 1px solid #e7ecf2 !important;
+    background-color: transparent !important;
+    color: #f2f6f9 !important;
+    font-size: 1rem !important;
+    letter-spacing: 1px !important;
+    cursor: text !important;
+    border-radius: 0 !important;
+}
+
+::placeholder {
+    color: white !important;
+}
+
+.formParagraph {
+    margin-bottom: 0.25rem;
+    color: #f2f6f9;
+    font-size: 1rem;
+}
+
+.formRadio {
+    margin: 3px 0 0 -20px;
+    line-height: normal;
+    float: left;
+    background-color: #200034 !important;
+    border: 1px solid white !important;
+}
+
+.formRadioLabel {
+    color: #f2f6f9;
+    font-size: 1.125rem;
+}
+
+
+#message {
+    margin-bottom: 0.75rem !important;
+    padding: 0.5rem 1rem !important;
+    border: 1px solid #e7ecf2 !important;
+    background-color: #200034 !important;
+    color: #f2f6f9 !important;
+    font-size: 1rem !important;
+    letter-spacing: 1px !important;
+    cursor: text !important;
+    border-radius: 0 !important;
+    resize: none;
+}
+
+.agreeCheckBox {
+    border: 1px solid #ccc !important;
+    background-color: #200034 !important;
+    border-radius: 0 !important;
+
+}
+
+.agreeLabel{
+    line-height: 1.5;
+    color: #f2f6f9;
+    font-size: 1.125rem;
+}
+
+.formSubmitBtn{
+    background-color: #C8C0B0;
+    border: none;
+    padding: 16px;
+}
+
+.careerContainer{
+    background-color: #7b8291;
+}
+
+.careerContainerHero{
+    padding-top: 20%;
+}
+
+.careerHeading{
+    font-size: 6rem;
+    font-weight: 700;
+    letter-spacing: -3.5px;
+    color: #200034;
+}
+
+.careerParagraph{
+    color: #e7ecf2;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    letter-spacing: .5px;
+}
+.careerBtn{
+    background-color: #C8C0B0;
+    border: none;
+    padding: 16px; 
+    
+}
+
+.careerFieldsSection{
+    margin-top: 10%;
+}
+
+.careerFieldTab{
+    color: #f2f6f9;
+    font-size: 1.3rem;
+    line-height: 1.2;
+    background-color: #7b8291 !important;
+}
+
+.nav-link.active
+{
+    font-weight: 700 !important; 
+}
+
+.careerFieldHeading{
     font-size: 2.5rem;
     line-height: 1.1;
     font-weight: 400;
+    color: #f2f6f9;
+    margin-bottom: 1rem;
+}
+
+.careerFieldParagraph{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #e7ecf2;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    letter-spacing: .5px;
+}
+.careerSelectBox{
+    background-color:#7b8291;
+    color:  white ;
+    font-size: 1.3rem;
+    border: 0px;
+    outline: 0;
+    line-height: 1.5;
+}
+
+
+.selectBoxOption{
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 2rem;
+    background-color: #f2f6f9;
+    color: #200034;
+    width: 90%;
+}
+
+.selectBoxHeading{
+    color: #f2f6f9;
+    font-size: 1.375rem;
+    line-height: 1.875rem;
+    letter-spacing: -1px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.selectBoxParagraph{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #e7ecf2;
+    font-size: 1rem;
+    line-height: 1.65rem;
+}
+
+
+@media (max-width: 575.98px) {
+    .subHeroTitleText>h2 {
+        font-size: 4rem;
+    }
+
+    .inTheWorkSectionContent {
+        font-size: 1rem;
+    }
+
+    .CardsImage {
+        margin-bottom: 20px;
+    }
+
+    .CardsSubTitle {
+        margin-bottom: 8px;
+
+    }
+
+    .revelText {
+        font-size: 1.25rem;
+        line-height: 1.875rem;
+    }
+
+    .revelHeadingText {
+        font-size: 2rem;
+    }
+
+    .contactSectionHeading {
+        font-size: 8rem;
+        letter-spacing: -6px;
+    }
+
+    .workPageHeading {
+        letter-spacing: -2px;
+        font-size: 3.5rem;
+        line-height: 3.8rem;
+        padding-right: 20px;
+    }
+
+    .CulturePageHeading {
+        letter-spacing: -2px;
+        font-size: 3.5rem;
+        line-height: 3.8rem;
+    }
+
+    .CultureValueText {
+        margin-bottom: 2rem;
+        font-size: 2rem;
+    }
+
+    .careerHeading{
+        font-size: 3.5rem;
+        line-height: 3.8rem;
+        letter-spacing: -2px;
+        line-height: 3.8rem;
+    }
+
+    .navBarMenu{
+        padding-top: 6rem;
+        padding-bottom: 2rem;
+       
+    }
+
+
 }
